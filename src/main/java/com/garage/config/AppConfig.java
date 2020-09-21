@@ -29,7 +29,7 @@ public class AppConfig implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("startpage");
         registry.addViewController("/account").setViewName("useraccountpage");
-
+        registry.addViewController("/main").setViewName("mainpage");
 
     }
 
@@ -39,8 +39,8 @@ public class AppConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/css/**").addResourceLocations("/WEB-INF/css/");
     }
 
-    @Override
+    /*@Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
-    }
+    }*/
 }

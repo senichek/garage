@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>Start page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -43,11 +43,14 @@
                 <a class="nav-link" href="/registration">Register</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/logout">Logout</a>
+                <a class="nav-link">
+                    <form method='post' action='/logout'>
+                        <input type='submit' value='Logout'>
+                    </form>
+                </a>
             </li>
         </ul>
     </div>
 </nav>
-
 </body>
 </html>
